@@ -51,16 +51,20 @@ hideSlide()
 showSlide(index)
 
 
-const autoSlider = (i = 0) => {
-    setInterval(() => {
-        i++
-        if (i > slides.length - 1) {
-            i = 0
+let sliderInterval
+
+const startAutoSlider = () => {
+    sliderInterval = setInterval(() => {
+        index++
+        if (index > slides.length - 1) {
+            index = 0
         }
         hideSlide()
-        showSlide(i)
-    }, 10000)
+        showSlide(index)
+    }, 5000)
 }
+
+startAutoSlider()
 
 next.onclick = () => {
     index < slides.length - 1 ? index++ : index = 0
@@ -74,4 +78,39 @@ prev.onclick = () => {
     showSlide(index)
 }
 
-autoSlider(index)
+const modal = document.querySelector('.modal')
+const closeBtn = document.querySelector('.modal_close')
+
+let isModalShown = false
+
+const showModal = () => {
+    modal.style.display = 'block'
+}
+
+const hideModal = () => {
+    modal.style.display = 'none'
+}
+
+closeBtn.onclick = hideModal
+
+const handleScroll = () => {
+    const scrollHeight = document.documentElement.scrollHeight
+    const scrollTop = document.documentElement.scrollTop
+    const clientHeight = document.documentElement.clientHeight
+
+    if (scrollTop + clientHeight >= scrollHeight && !isModalShown) {
+        showModal()
+        isModalShown = true
+        window.removeEventListener('scroll', handleScroll)
+    }
+}
+
+window.addEventListener('scroll', handleScroll)
+
+setTimeout(() => {
+    if (!isModalShown) {
+        showModal()
+        isModalShown = true
+    }
+}, 10000)
+
