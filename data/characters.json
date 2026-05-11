@@ -20,7 +20,6 @@
   {
     "name": "John Wick",
     "age": 40,
-    "description": "Hitman",
-    "person_photo": "https://upload.wikimedia.org/wikipedia/ru/thumb/3/3c/John_Wick_4.jpg/250px-John_Wick_4.jpg"
+    "description": "Hitman"
   }
 ]
