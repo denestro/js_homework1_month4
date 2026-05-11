@@ -1,17 +1,26 @@
 [
   {
-    "name": "Harry Potter",
-    "age": 16,
-    "photo": "https://static.independent.co.uk/2023/04/05/09/newFile-7.jpg"
+    "name": "Walter White",
+    "age": 52,
+    "description": "Chemistry teacher",
+    "person_photo": "https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png"
   },
   {
     "name": "Tony Stark",
-    "age": 45,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXH-z8rAOaQPunGSruZcl56zs0Y6XZ_Tm12g&s"
+    "age": 48,
+    "description": "Iron Man",
+    "person_photo": "https://upload.wikimedia.org/wikipedia/ru/f/f2/Robert_Downey_Jr._as_Tony_Stark_in_Avengers_Infinity_War.jpg"
   },
   {
-    "name": "Walter White",
-    "age": 50,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBylqDK3pgrRMnI75TyFJ6yszY_gz3lNIaiQ&s"
+    "name": "Naruto Uzumaki",
+    "age": 19,
+    "description": "Hokage",
+    "person_photo": "https://upload.wikimedia.org/wikipedia/ru/archive/e/ef/20210126195649%21Naruto_Uzumaki_%283_in_1%29.png"
+  },
+  {
+    "name": "John Wick",
+    "age": 40,
+    "description": "Hitman",
+    "person_photo": "https://upload.wikimedia.org/wikipedia/ru/thumb/3/3c/John_Wick_4.jpg/250px-John_Wick_4.jpg"
   }
 ]
